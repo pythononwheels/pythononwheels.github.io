@@ -202,6 +202,12 @@ h6,
     /*width: 100%; */
     width: 80%;
 }
+
+.blog-post h3 a{
+    /*width: 100%; */
+    
+}
+
 .blog-post-text {
   margin-bottom: 4rem;
   font-family: 'Raleway', sans-serif;

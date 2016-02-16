@@ -206,11 +206,16 @@
 <p>Showing the tweetchazzer Games and Moves over the last 30 days.
 (Updated dayly)</p>
 
-<p>The "span" is defines in the page and the d3.js javascript
-chart is entirely defines in the template (charttest.tmpl)
+<p>The "span" is defined in the page/charttest.py and the d3.js javascript
+chart is entirely defined in the template (charttest.tmpl)
 The data is loaded on the fly (even in this static page) from </p>
 
 <pre><code>data/game_stats.csv
+
+
+d3.csv("/data/game_stats.csv", function(error, data) {
+    ...
+}
 </code></pre>
 
 <p><span class="chart-span">
