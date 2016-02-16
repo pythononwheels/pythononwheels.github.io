@@ -21,13 +21,13 @@
 
     
     <!-- Bootstrap core CSS -->
-    <link href="/site/static/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="/./static/bootstrap/css/bootstrap.css" rel="stylesheet">
 
     <!-- highlight.js -->
-    <link rel="stylesheet" href="/site/static/bs4_blog/railscast.css">
+    <link rel="stylesheet" href="/./static/bs4_blog/railscast.css">
 
     <!-- Custom styles for this template -->
-    <link href="/site/static/bs4_blog/blog.css" rel="stylesheet">
+    <link href="/./static/bs4_blog/blog.css" rel="stylesheet">
 
 
 
@@ -38,17 +38,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="/site/static/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="/./static/js/ie10-viewport-bug-workaround.js"></script>
 
     <!-- Tether Javascript file -->
     <!-- see: http://v4-alpha.getbootstrap.com/components/tooltips/ -->
     <!-- And: https://github.com/twbs/bootstrap/issues/18732 -->
 
     <!-- chart.js  -->
-    <script src="/site/static/js/Chart.min.js"></script>
+    <script src="/./static/js/Chart.min.js"></script>
 
     <!-- tag cloud -->
-    <script src="/site/static/bs4_blog/jquery.tagcloud.js"></script>
+    <script src="/./static/bs4_blog/jquery.tagcloud.js"></script>
 
 
     
@@ -102,22 +102,22 @@
             
                 
                     
-                     <a class="nav-link" href="/site//pages/what-this-is-all-about.html">About/Projects</a>
+                     <a class="nav-link" href="/pages/what-this-is-all-about.html">About/Projects</a>
                 
             
                 
                     
-                     <a class="nav-link" href="/site//pages/static_page.html">static</a>
+                     <a class="nav-link" href="/pages/static_page.html">static</a>
                 
             
                 
                     
-                     <a class="nav-link" href="/site//pages/image-gallery.html">Gallery</a>
+                     <a class="nav-link" href="/pages/image-gallery.html">Gallery</a>
                 
             
                 
                     
-                     <a class="nav-link" href="/site//pages/charttest.html">Charttest</a>
+                     <a class="nav-link" href="/pages/charttest.html">Charttest</a>
                 
             
           
@@ -137,33 +137,77 @@
 
 
           
-  <div class="blog-post">
-  
-      <div class="blog-post-text">
-          <h2>headline2</h2>
+    
 
-<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy 
-eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, 
-no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, 
-consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore 
-magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. </p>
+        <div class="blog-post">
+            <h2 class="blog-post-title">INLINE CODE TEST</h2>
+            <p class="blog-post-meta">2016-02-12T12:00:00 by <a href="#">klaas</a>
+            </p>
+            <div class="row">
 
-<p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                <div class="col-sm-3">
+                    
+                        <a class="story-img" href="/posts/inline-code-test.html">
+                          
+                            <img src="/./static/images/highlightjs.png"
+                            style="width:200px" class="img-thumbnail"-->
+                          
+                       
+                    </a>
 
-<h3>wow, this is an image:</h3>
+                </div>
+                <div class="col-sm-9">
+                    
+                        
+                        <h4>a code example:</h4>
 
-<p><img src="/static/images/LimacinaHelicinaNOAA.jpg" alt="Alt text" /></p>
+<pre><code>@requires_authorization
+def somefunc(param1='', param2=0):
+    r'''A docstring'''
+    if param1 &gt; param2: # interesting
+        print ("Greater")
+    return (param2 - param1 + 1 + 0b10l) or None
 
-          
-            <!-- https://twittercommunity.com/t/tweet-button-vs-intents-dynamically-change-tweet-text/17166 -->
-            <a class="btn btn-primary-outline btn-sm" 
-              href="https://twitter.com/share?url=''&amp;text=%40pythononwheels%20%23comment%20%23postid%3A358467b812d85aaf00d51d9361ff0360" 
-              rel="nofollow">Comment with Twitter</a>
-            
-          
-      </div>
-  </div>
+class SomeClass:
+    pass
+
+&gt;&gt;&gt; message = '''interpreter
+... prompt'''
+</code></pre>
+
+<p>Just to see if inline code in posts works well.
+I like it.</p>
+
+<p>
+                    
+                        
+                        
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    &nbsp;
+                </div>
+                <div class="col-sm-6">
+                    <span class="pull-right">
+                    
+                        <span class="label label-info"><a class="tag-link" href="/tagviews/python.html">python</a></span> 
+                    
+                        <span class="label label-info"><a class="tag-link" href="/tagviews/devel.html">devel</a></span> 
+                    
+                        <span class="label label-info"><a class="tag-link" href="/tagviews/code.html">code</a></span> 
+                    
+                    </span>
+                    
+                </div>
+                <div class="col-sm-3">
+                    <span class="pull left">
+                        <a href="/posts/inline-code-test.html">>> Read More</a>
+                    </span>
+                </div>
+            </div>
+        </div><!-- /.blog-post -->
+    
 
           
           
@@ -183,19 +227,19 @@ magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolo
         <div id="tagcloud">
           
           
-            <a href="/site/tagviews/static.html" rel="3">static</a>
+            <a href="/tagviews/code.html" rel="1">code</a>
           
-            <a href="/site/tagviews/python.html" rel="4">python</a>
+            <a href="/tagviews/markdown.html" rel="2">markdown</a>
           
-            <a href="/site/tagviews/first.html" rel="1">first</a>
+            <a href="/tagviews/static.html" rel="3">static</a>
           
-            <a href="/site/tagviews/code.html" rel="1">code</a>
+            <a href="/tagviews/wow.html" rel="1">wow</a>
           
-            <a href="/site/tagviews/markdown.html" rel="2">markdown</a>
+            <a href="/tagviews/devel.html" rel="1">devel</a>
           
-            <a href="/site/tagviews/devel.html" rel="1">devel</a>
+            <a href="/tagviews/python.html" rel="4">python</a>
           
-            <a href="/site/tagviews/wow.html" rel="1">wow</a>
+            <a href="/tagviews/first.html" rel="1">first</a>
           
         
         </div>
