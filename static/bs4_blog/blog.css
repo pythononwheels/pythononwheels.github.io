@@ -195,8 +195,12 @@ h6,
 }
 /* to make images fit the bootstrap cols since markdown doesnt support image width,height
 */
+
+
+
 .blog-post img {
-    width: 100%;
+    /*width: 100%; */
+    width: 80%;
 }
 .blog-post-text {
   margin-bottom: 4rem;
