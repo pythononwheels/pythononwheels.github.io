@@ -1,0 +1,420 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="a blog made by static.py">
+    <meta name="author" content="khz@tzi.org">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>My wonderful static blog</title>
+
+
+    <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+
+    
+    <!-- Bootstrap core CSS -->
+    <link href="/static/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- highlight.js -->
+    <link rel="stylesheet" href="/static/bs4_blog/railscast.css">
+
+    <!-- Custom styles for this template -->
+    <link href="/static/bs4_blog/blog.css" rel="stylesheet">
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="/static/js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- Tether Javascript file -->
+    <!-- see: http://v4-alpha.getbootstrap.com/components/tooltips/ -->
+    <!-- And: https://github.com/twbs/bootstrap/issues/18732 -->
+
+    <!-- chart.js  -->
+    <script src="/static/js/Chart.min.js"></script>
+
+    <!-- tag cloud -->
+    <script src="/static/bs4_blog/jquery.tagcloud.js"></script>
+
+
+    
+
+    <!--script src="/static/bootstrap/js/tether.min.js"></script -->    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+    <script type="text/javascript" charset="utf-8">
+     $.fn.tagcloud.defaults = {
+        size: {start: 14, end: 18, unit: 'pt'},
+        color: {start: '#cde', end: '#f52'}
+    };
+
+
+
+     $(document).ready(function(){
+       $('pre code').each(function(i, block) {
+            hljs.highlightBlock(block);
+        });
+
+       $("#tagcloud a").tagcloud();
+       
+       
+       
+       
+   
+    })
+   
+    </script>
+    
+
+    
+    <!--link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'-->
+    <!--link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'-->
+
+
+
+
+    
+    <!--link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'-->
+    <!--link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'-->
+
+ 
+
+  </head>
+    <body>
+        <div class="blog-masthead">
+      <div class="container">
+        <nav class="nav blog-nav">
+          <a class="nav-link active" href="http://localhost:8000">pythononwheels</a>
+          
+            
+                
+                    
+                     <a class="nav-link" href="/site//pages/what-this-is-all-about.html">About</a>
+                
+            
+                
+                    
+                     <a class="nav-link" href="/site//pages/twitter-timeline.html">Twitter</a>
+                
+            
+                
+                    
+                     <a class="nav-link" href="/site//pages/image-gallery.html">Gallery</a>
+                
+            
+                
+                    
+                     <a class="nav-link" href="/site//pages/charttest.html">Charttest</a>
+                
+            
+          
+        </nav>
+      </div>
+    </div>
+    
+
+
+      <div class="container">
+      <div class="container">
+        <div class="row">
+        
+          <div class="col-sm-8 blog-main">
+          
+            <div class="blog-header">
+
+              
+                
+                  <span class="blog-post-title">static.py</span>
+                
+              
+              
+                
+                  <p class="blog-post-subtitle">THE EASY AND QUICK BLOG, PAGE AND SINGLE PAGE GENERATOR.</p>
+                
+              
+              </div>
+
+              
+
+
+            
+
+            
+
+          
+
+
+
+          
+    
+
+        <div class="blog-post">
+            <h2 class="blog-post-title">INLINE CODE TEST</h2>
+            <p class="blog-post-meta">2016-02-12T12:00:00 by <a href="#">klaas</a>
+            </p>
+            <div class="row">
+
+                <div class="col-sm-3">
+                    
+                        <a class="story-img" href="/site/posts/inline-code-test.html">
+                          
+                            <img src="/static/images/highlightjs.png" 
+                            style="width:200px" class="img-thumbnail"-->
+                          
+                       
+                    </a>
+
+                </div>
+                <div class="col-sm-9">
+                    
+                        
+                        <h4>a code example:</h4>
+
+<pre><code>@requires_authorization
+def somefunc(param1='', param2=0):
+    r'''A docstring'''
+    if param1 &gt; param2: # interesting
+        print ("Greater")
+    return (param2 - param1 + 1 + 0b10l) or None
+
+class SomeClass:
+    pass
+
+&gt;&gt;&gt; message = '''interpreter
+... prompt'''
+</code></pre>
+
+<p>Just to see if inline code in posts works well.
+I like it.</p>
+
+<p>
+                    
+                        
+                        
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    &nbsp;
+                </div>
+                <div class="col-sm-6">
+                    <span class="pull-right">
+                    
+                        <span class="label label-info"><a class="tag-link" href="/site/tagviews/python.html">python</a></span> 
+                    
+                        <span class="label label-info"><a class="tag-link" href="/site/tagviews/devel.html">devel</a></span> 
+                    
+                        <span class="label label-info"><a class="tag-link" href="/site/tagviews/code.html">code</a></span> 
+                    
+                    </span>
+                    
+                </div>
+                <div class="col-sm-3">
+                    <span class="pull left">
+                        <a href="/site/posts/inline-code-test.html">>> Read More</a>
+                    </span>
+                </div>
+            </div>
+        </div><!-- /.blog-post -->
+    
+
+        <div class="blog-post">
+            <h2 class="blog-post-title">MARKDOWN TEST TEXT</h2>
+            <p class="blog-post-meta">2016-02-05T12:00:00 by <a href="#">klaas</a>
+            </p>
+            <div class="row">
+
+                <div class="col-sm-3">
+                    
+                        <a class="story-img" href="/site/posts/markdown-test-text.html">
+                          
+                            <img src="/static/images/GitHub_Logo.png" 
+                            style="width:200px" class="img-thumbnail"-->
+                          
+                       
+                    </a>
+
+                </div>
+                <div class="col-sm-9">
+                    
+                        
+                            <p>this is a markdown test text taken from github.</p>
+
+                        
+                    
+                        
+                        
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    &nbsp;
+                </div>
+                <div class="col-sm-6">
+                    <span class="pull-right">
+                    
+                        <span class="label label-info"><a class="tag-link" href="/site/tagviews/markdown.html">markdown</a></span> 
+                    
+                    </span>
+                    
+                </div>
+                <div class="col-sm-3">
+                    <span class="pull left">
+                        <a href="/site/posts/markdown-test-text.html">>> Read More</a>
+                    </span>
+                </div>
+            </div>
+        </div><!-- /.blog-post -->
+    
+
+        <div class="blog-post">
+            <h2 class="blog-post-title">THIS SHOULD COME FIRST !! (TILL 31.1.2016)</h2>
+            <p class="blog-post-meta">2016-01-31T12:00:00 by <a href="#">klaas</a>
+            </p>
+            <div class="row">
+
+                <div class="col-sm-3">
+                    
+                        <a class="story-img" href="/site/posts/this-should-come-first-!!-(till-3112016).html">
+                          
+                            <img src="/static/images/Titan_poster.png" 
+                            style="width:200px" class="img-thumbnail"-->
+                          
+                       
+                    </a>
+
+                </div>
+                <div class="col-sm-9">
+                    
+                        
+                        <p>Well, I always wanted to do this and now I did.</p>
+
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy 
+eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, 
+no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, 
+consetetur sa
+                    
+                        
+                        
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    &nbsp;
+                </div>
+                <div class="col-sm-6">
+                    <span class="pull-right">
+                    
+                        <span class="label label-info"><a class="tag-link" href="/site/tagviews/python.html">python</a></span> 
+                    
+                        <span class="label label-info"><a class="tag-link" href="/site/tagviews/static.html">static</a></span> 
+                    
+                        <span class="label label-info"><a class="tag-link" href="/site/tagviews/first.html">first</a></span> 
+                    
+                        <span class="label label-info"><a class="tag-link" href="/site/tagviews/wow.html">wow</a></span> 
+                    
+                    </span>
+                    
+                </div>
+                <div class="col-sm-3">
+                    <span class="pull left">
+                        <a href="/site/posts/this-should-come-first-!!-(till-3112016).html">>> Read More</a>
+                    </span>
+                </div>
+            </div>
+        </div><!-- /.blog-post -->
+    
+
+          
+          
+              <nav>
+                <ul class="pager">
+                  
+                    <li class="disabled"><a href="None">Newer</a></li>
+                  
+                  
+                    <li><a href="index_1.html">Older</a></li>
+                  
+                </ul>
+              </nav>
+          
+        </div><!-- col-sm-8 /.blog-main -->
+
+
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          <!-- sidebar -->
+          
+
+   <div class="sidebar-module sidebar-module-inset">
+      <h5>About</h5>
+      <p>this blog is about everything around python, computers, science, news, and stuff.</p>
+    </div>
+    <div class="sidebar-module">
+      <h5>Tags</h5>
+        <div id="tagcloud">
+          
+          
+            <a href="/site/tagviews/markdown.html" rel="2">markdown</a>
+          
+            <a href="/site/tagviews/devel.html" rel="1">devel</a>
+          
+            <a href="/site/tagviews/wow.html" rel="1">wow</a>
+          
+            <a href="/site/tagviews/first.html" rel="1">first</a>
+          
+            <a href="/site/tagviews/python.html" rel="4">python</a>
+          
+            <a href="/site/tagviews/code.html" rel="1">code</a>
+          
+            <a href="/site/tagviews/static.html" rel="3">static</a>
+          
+        
+        </div>
+    </div>
+    <div class="sidebar-module">
+      <h5>Elsewhere</h5>
+      <ol class="list-unstyled">
+
+        
+          <li><a href="https://github.com/pythononwheels">GitHub</a></li>
+        
+
+        
+
+        
+          <li><a href="http://twitter.com/pythononwheels">Twitter</a></li>
+        
+        
+      </ol>
+    </div>
+
+        </div><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+    </div>
+    </div><!-- /.container -->
+
+    <footer class="blog-footer">
+      <p>A Blog by <a href="https://twitter.com/pythononwheels">@pythononwheels</a>.</p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+    </footer>
+
+
+    </body>
+</html>

@@ -1,0 +1,326 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="a blog made by static.py">
+    <meta name="author" content="khz@tzi.org">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>My wonderful static blog</title>
+
+
+    <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+
+    
+    <!-- Bootstrap core CSS -->
+    <link href="/static/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- highlight.js -->
+    <link rel="stylesheet" href="/static/bs4_blog/railscast.css">
+
+    <!-- Custom styles for this template -->
+    <link href="/static/bs4_blog/blog.css" rel="stylesheet">
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="/static/js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- Tether Javascript file -->
+    <!-- see: http://v4-alpha.getbootstrap.com/components/tooltips/ -->
+    <!-- And: https://github.com/twbs/bootstrap/issues/18732 -->
+
+    <!-- chart.js  -->
+    <script src="/static/js/Chart.min.js"></script>
+
+    <!-- tag cloud -->
+    <script src="/static/bs4_blog/jquery.tagcloud.js"></script>
+
+
+    
+
+    <!--script src="/static/bootstrap/js/tether.min.js"></script -->    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+    <script type="text/javascript" charset="utf-8">
+     $.fn.tagcloud.defaults = {
+        size: {start: 14, end: 18, unit: 'pt'},
+        color: {start: '#cde', end: '#f52'}
+    };
+
+
+
+     $(document).ready(function(){
+       $('pre code').each(function(i, block) {
+            hljs.highlightBlock(block);
+        });
+
+       $("#tagcloud a").tagcloud();
+       
+       
+       
+       
+   
+    })
+   
+    </script>
+    
+
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> 
+    <script src="/static/bs4_blog/jquery.mosaicflow.min.js"></script>
+
+
+
+
+    
+
+    <style> 
+      .mosaicflow__column { 
+          float:left; 
+      } 
+      .mosaicflow__item {
+        position:relative;
+      }
+      .mosaicflow__item img { 
+          display:block; 
+          width:100%; 
+          height:auto; 
+          max-width:500px;
+        } 
+      .mosaicflow__item p {
+          position:absolute;
+          bottom:0;
+          left:0;
+          width:100%;
+          margin:0;
+          padding:5px;
+          background:hsla(0,0%,0%,.5);
+          color:#fff;
+          font-size:14px;
+          text-shadow:1px 1px 1px hsla(0,0%,0%,.75);
+          opacity:0;
+          -webkit-transition: all 0.4s cubic-bezier(0.23,1,0.32,1);
+             -moz-transition: all 0.4s cubic-bezier(0.23,1,0.32,1);
+               -o-transition: all 0.4s cubic-bezier(0.23,1,0.32,1);
+                  transition: all 0.4s cubic-bezier(0.23,1,0.32,1);
+          }
+      .mosaicflow__item:hover p {
+        opacity:1;
+      }
+    </style>
+
+
+ 
+
+  </head>
+    <body>
+        <div class="blog-masthead">
+      <div class="container">
+        <nav class="nav blog-nav">
+          <a class="nav-link active" href="http://localhost:8000">pythononwheels</a>
+          
+            
+                
+                    
+                        <a class="nav-link" 
+                    
+                        href="/site//pages/what-this-is-all-about.html">About</a>
+                
+            
+                
+                    
+                        <a class="nav-link" 
+                    
+                        href="/site//pages/twitter-timeline.html">Twitter</a>
+                
+            
+                
+                    
+                        <a class="nav-link active" 
+                    
+                        href="/site//pages/image-gallery.html">Gallery</a>
+                
+            
+                
+                    
+                        <a class="nav-link" 
+                    
+                        href="/site//pages/charttest.html">Charttest</a>
+                
+            
+          
+        </nav>
+      </div>
+    </div>
+    
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> 
+    <script src="/static/bs4_blog/jquery.mosaicflow.min.js"></script>
+
+    
+    
+
+    <style> 
+      .mosaicflow__column { 
+          float:left; 
+      } 
+      .mosaicflow__item {
+        position:relative;
+      }
+      .mosaicflow__item img { 
+          display:block; 
+          width:100%; 
+          height:auto; 
+          max-width:500px;
+        } 
+      .mosaicflow__item p {
+          position:absolute;
+          bottom:0;
+          left:0;
+          width:100%;
+          margin:0;
+          padding:5px;
+          background:hsla(0,0%,0%,.5);
+          color:#fff;
+          font-size:14px;
+          text-shadow:1px 1px 1px hsla(0,0%,0%,.75);
+          opacity:0;
+          -webkit-transition: all 0.4s cubic-bezier(0.23,1,0.32,1);
+             -moz-transition: all 0.4s cubic-bezier(0.23,1,0.32,1);
+               -o-transition: all 0.4s cubic-bezier(0.23,1,0.32,1);
+                  transition: all 0.4s cubic-bezier(0.23,1,0.32,1);
+          }
+      .mosaicflow__item:hover p {
+        opacity:1;
+      }
+    </style>
+
+
+  
+
+    
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-sm-1">
+      &nbsp;
+      </div>
+
+      <div class="col-sm-9 blog-main">
+
+            
+              <div class="clearfix mosaicflow"> 
+                <!-- see: http://stackoverflow.com/questions/10139341/handling-an-undefined-template-variable-in-tornado -->
+                <!-- other option is try ... except -->
+                  
+                  
+                  <div class="mosaicflow__item"> 
+                    <img width="640" height="413" src="/static/images/640px-Dioctria_linearis_-_side_(aka).jpg" alt="640px-Dioctria_linearis_-_side_(aka).jpg"> 
+                    <p>640px-Dioctria_linearis_-_side_(aka).jpg</p>
+                  </div> 
+                  
+                  <div class="mosaicflow__item"> 
+                    <img width="195" height="130" src="/static/images/city_lights_asia_tn_grid.jpg" alt="city_lights_asia_tn_grid.jpg"> 
+                    <p>city_lights_asia_tn_grid.jpg</p>
+                  </div> 
+                  
+                  <div class="mosaicflow__item"> 
+                    <img width="1046" height="842" src="/static/images/copow_new_homepage2.png" alt="copow_new_homepage2.png"> 
+                    <p>copow_new_homepage2.png</p>
+                  </div> 
+                  
+                  <div class="mosaicflow__item"> 
+                    <img width="480" height="112" src="/static/images/daring_fireball.png" alt="daring_fireball.png"> 
+                    <p>daring_fireball.png</p>
+                  </div> 
+                  
+                  <div class="mosaicflow__item"> 
+                    <img width="1280" height="720" src="/static/images/ettelsberg.jpg" alt="ettelsberg.jpg"> 
+                    <p>ettelsberg.jpg</p>
+                  </div> 
+                  
+                  <div class="mosaicflow__item"> 
+                    <img width="276" height="183" src="/static/images/fireball_640.jpg" alt="fireball_640.jpg"> 
+                    <p>fireball_640.jpg</p>
+                  </div> 
+                  
+                  <div class="mosaicflow__item"> 
+                    <img width="120" height="120" src="/static/images/GitHub-Mark-120px-plus.png" alt="GitHub-Mark-120px-plus.png"> 
+                    <p>GitHub-Mark-120px-plus.png</p>
+                  </div> 
+                  
+                  <div class="mosaicflow__item"> 
+                    <img width="1000" height="410" src="/static/images/GitHub_Logo.png" alt="GitHub_Logo.png"> 
+                    <p>GitHub_Logo.png</p>
+                  </div> 
+                  
+                  <div class="mosaicflow__item"> 
+                    <img width="1128" height="654" src="/static/images/github_pages.png" alt="github_pages.png"> 
+                    <p>github_pages.png</p>
+                  </div> 
+                  
+                  <div class="mosaicflow__item"> 
+                    <img width="246" height="134" src="/static/images/highlightjs.png" alt="highlightjs.png"> 
+                    <p>highlightjs.png</p>
+                  </div> 
+                  
+                  <div class="mosaicflow__item"> 
+                    <img width="600" height="450" src="/static/images/LimacinaHelicinaNOAA.jpg" alt="LimacinaHelicinaNOAA.jpg"> 
+                    <p>LimacinaHelicinaNOAA.jpg</p>
+                  </div> 
+                  
+                  <div class="mosaicflow__item"> 
+                    <img width="193" height="145" src="/static/images/LimacinaHelicinaNOAA_small.jpg" alt="LimacinaHelicinaNOAA_small.jpg"> 
+                    <p>LimacinaHelicinaNOAA_small.jpg</p>
+                  </div> 
+                  
+                  <div class="mosaicflow__item"> 
+                    <img width="500" height="148" src="/static/images/markdown_mark_large.png" alt="markdown_mark_large.png"> 
+                    <p>markdown_mark_large.png</p>
+                  </div> 
+                  
+                  <div class="mosaicflow__item"> 
+                    <img width="601" height="203" src="/static/images/python-logo-master-v3-TM.png" alt="python-logo-master-v3-TM.png"> 
+                    <p>python-logo-master-v3-TM.png</p>
+                  </div> 
+                  
+                  <div class="mosaicflow__item"> 
+                    <img width="640" height="335" src="/static/images/Titan_poster.png" alt="Titan_poster.png"> 
+                    <p>Titan_poster.png</p>
+                  </div> 
+                  
+                  <div class="mosaicflow__item"> 
+                    <img width="286" height="72" src="/static/images/tornado.png" alt="tornado.png"> 
+                    <p>tornado.png</p>
+                  </div> 
+                  
+              </div>
+            
+            </p>
+
+      <div class="col-sm-1">
+      &nbsp;
+      </div>
+    </div>
+  </div>
+
+
+          
+
+    </body>
+</html>

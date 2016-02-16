@@ -1,0 +1,358 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="a blog made by static.py">
+    <meta name="author" content="khz@tzi.org">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>My wonderful static blog</title>
+
+
+    <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+
+    
+    <!-- Bootstrap core CSS -->
+    <link href="/static/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- highlight.js -->
+    <link rel="stylesheet" href="/static/bs4_blog/railscast.css">
+
+    <!-- Custom styles for this template -->
+    <link href="/static/bs4_blog/blog.css" rel="stylesheet">
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="/static/js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- Tether Javascript file -->
+    <!-- see: http://v4-alpha.getbootstrap.com/components/tooltips/ -->
+    <!-- And: https://github.com/twbs/bootstrap/issues/18732 -->
+
+    <!-- chart.js  -->
+    <script src="/static/js/Chart.min.js"></script>
+
+    <!-- tag cloud -->
+    <script src="/static/bs4_blog/jquery.tagcloud.js"></script>
+
+
+    
+
+    <!--script src="/static/bootstrap/js/tether.min.js"></script -->    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+    <script type="text/javascript" charset="utf-8">
+     $.fn.tagcloud.defaults = {
+        size: {start: 14, end: 18, unit: 'pt'},
+        color: {start: '#cde', end: '#f52'}
+    };
+
+
+
+     $(document).ready(function(){
+       $('pre code').each(function(i, block) {
+            hljs.highlightBlock(block);
+        });
+
+       $("#tagcloud a").tagcloud();
+       
+       
+       
+       
+   
+    })
+   
+    </script>
+    
+
+    
+
+            <script src="//d3js.org/d3.v3.min.js"></script>
+
+
+
+
+
+    
+    <!--link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'-->
+    <!--link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'-->
+    <style>
+
+.chart-span {
+  font: 10px sans-serif; 
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.bar {
+  fill: steelblue;
+}
+
+.x.axis path {
+  display: none;
+}
+
+</style>
+
+ 
+
+  </head>
+    <body>
+        <div class="blog-masthead">
+      <div class="container">
+        <nav class="nav blog-nav">
+          <a class="nav-link active" href="http://localhost:8000">pythononwheels</a>
+          
+            
+                
+                    
+                        <a class="nav-link" 
+                    
+                        href="/site//pages/what-this-is-all-about.html">About</a>
+                
+            
+                
+                    
+                        <a class="nav-link" 
+                    
+                        href="/site//pages/twitter-timeline.html">Twitter</a>
+                
+            
+                
+                    
+                        <a class="nav-link" 
+                    
+                        href="/site//pages/image-gallery.html">Gallery</a>
+                
+            
+                
+                    
+                        <a class="nav-link active" 
+                    
+                        href="/site//pages/charttest.html">Charttest</a>
+                
+            
+          
+        </nav>
+      </div>
+    </div>
+    
+    
+
+            <script src="//d3js.org/d3.v3.min.js"></script>
+
+
+    
+    
+    <!--link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'-->
+    <!--link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'-->
+    <style>
+
+.chart-span {
+  font: 10px sans-serif; 
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.bar {
+  fill: steelblue;
+}
+
+.x.axis path {
+  display: none;
+}
+
+</style>
+
+  
+
+    
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-sm-1">
+      &nbsp;
+      </div>
+
+      <div class="col-sm-9 blog-main">
+
+         <h1>A <a href="https://d3js.org/">d3.js</a> chart loading csv from data/</h1>
+
+<p>Showing the tweetchazzer Games and Moves over the last 30 days.
+(Updated dayly)</p>
+
+<p>The "span" is defines in the page and the d3.js javascript
+chart is entirely defines in the template (charttest.tmpl)
+The data is loaded on the fly (even in this static page) from </p>
+
+<pre><code>data/game_stats.csv
+</code></pre>
+
+<p><span class="chart-span">
+</span></p>
+
+<h4>And here an example in <a href="http://www.chartjs.org/">chart.js</a></h4>
+
+<p>The data and javascript for this chart are entirely defined in the
+page markdown. (see pages/charttest).</p>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js'></script>
+<canvas id="buyers" width="600" height="400"></canvas>
+<script>
+var buyerData = {
+    labels : ["January","February","March","April","May","June"],
+    datasets : [
+        {
+            fillColor : "rgba(172,194,132,0.4)",
+            strokeColor : "#ACC26D",
+            pointColor : "#fff",
+            pointStrokeColor : "#9DB86D",
+            data : [203,156,99,251,305,247]
+        }
+    ]
+}
+    var buyers = document.getElementById('buyers').getContext('2d');
+    new Chart(buyers).Line(buyerData);
+</script>
+
+<h3>finally a jquery table loading a csv file.</h3>
+
+
+        <script>
+
+            var margin = {top: 20, right: 20, bottom: 30, left: 40},
+                width = 960 - margin.left - margin.right,
+                height = 500 - margin.top - margin.bottom;
+
+            var x = d3.scale.ordinal()
+                .rangeRoundBands([0, width], .1);
+
+            var y = d3.scale.linear()
+                .rangeRound([height, 0]);
+
+            var color = d3.scale.ordinal()
+                /*.range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]); 
+                .range(["#98abc5", "#8a89a6",  "#7b6888"]); */
+                .range([ "#d0743c", "#ff8c00"]);
+
+            
+
+            var yAxis = d3.svg.axis()
+                .scale(y)
+                .orient("left")
+                .tickFormat(d3.format(".2s"));
+
+            var svg = d3.select("span").append("svg")
+                .attr("width", width + margin.left + margin.right)
+                .attr("height", height + margin.top + margin.bottom)
+              .append("g")
+                .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+            d3.csv("/data/game_stats.csv", function(error, data) {
+              if (error) throw error;
+
+              color.domain(d3.keys(data[0]).filter(function(key) { return key !== "State"; }));
+
+              data.forEach(function(d) {
+                var y0 = 0;
+                d.ages = color.domain().map(function(name) { return {name: name, y0: y0, y1: y0 += +d[name]}; });
+                d.total = d.ages[d.ages.length - 1].y1;
+              });
+              
+              var xAxis = d3.svg.axis()
+                .scale(x)
+                .orient("bottom");
+              
+              var xAxis = d3.svg.axis().scale(x).orient("bottom");
+              /*data.sort(function(a, b) { return b.total - a.total; });*/
+
+              x.domain(data.map(function(d) { return d.Games; }));
+              y.domain([0, d3.max(data, function(d) { return d.total; })]);
+
+              svg.append("g")
+                  .attr("class", "x axis")
+                  .attr("transform", "translate(0," + height + ")")
+                  //.call(xAxis)
+
+              svg.append("g")
+                  .attr("class", "y axis")
+                  .call(yAxis)
+                .append("text")
+                  .attr("transform", "rotate(-90)")
+                  .attr("y", 6)
+                  .attr("dy", ".71em")
+                  .style("text-anchor", "end")
+                  .text("#of Games, Moves");
+
+              var state = svg.selectAll(".state")
+                  .data(data)
+                .enter().append("g")
+                  .attr("class", "g")
+                  .attr("transform", function(d) { return "translate(" + x(d.Games) + ",0)"; });
+
+              state.selectAll("rect")
+                  .data(function(d) { return d.ages; })
+                .enter().append("rect")
+                  .attr("width", x.rangeBand())
+                  .attr("y", function(d) { return y(d.y1); })
+                  .attr("height", function(d) { return y(d.y0) - y(d.y1); })
+                  .style("fill", function(d) { return color(d.name); });
+
+              var legend = svg.selectAll(".legend")
+                  .data(color.domain().slice().reverse())
+                .enter().append("g")
+                  .attr("class", "legend")
+                  .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+
+              legend.append("rect")
+                  .attr("x", width - 18)
+                  .attr("width", 18)
+                  .attr("height", 18)
+                  .style("fill", color);
+
+              legend.append("text")
+                  .attr("x", width - 24)
+                  .attr("y", 9)
+                  .attr("dy", ".35em")
+                  .style("text-anchor", "end")
+                  .text(function(d) { return d; });
+
+            });
+          </script>
+      
+      <div class="col-sm-1">
+      &nbsp;
+      </div>
+    </div>
+  </div>
+
+
+          
+
+    </body>
+</html>
