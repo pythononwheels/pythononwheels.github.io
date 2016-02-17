@@ -1,4 +1,4 @@
-/*
+≤,/*
  * Globals
  */
 @media (min-width: 48em) {
@@ -119,6 +119,24 @@ h6,
 .post-title-link:focus {
   color: orange;
   background-color: transparent;
+}
+
+
+/*
+ * page stuff
+ */
+
+.page-header {
+  font-family: 'Raleway', sans-serif;
+  padding-bottom: 1.25rem;
+  /* margin-bottom: 2rem; */
+  /*border-bottom: .05rem solid #eee; */
+}
+
+.page-post {
+  margin-bottom: 4rem;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.85rem;
 }
 
 /*
