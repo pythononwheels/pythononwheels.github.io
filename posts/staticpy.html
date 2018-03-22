@@ -131,61 +131,89 @@
   <div class="blog-post">
   
       <div class="blog-post-text">
-          <p>Well, I always wanted to do this and now I did.</p>
+          <p><img src="/static/images/static_logo_2.png" alt="static.py logo" /></p>
 
-<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy 
-eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, 
-no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, 
-consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore 
-magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. </p>
+<h3>static.py</h3>
 
-<p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+<p>is (yet another) static blog/page/singlepage generator for python.</p>
 
-<h3>Just Titanic:</h3>
+<p>But I think it has quite a few nice features to make you up and running out of the box.
+The most handy is IMHO that you can comment static post with twitter. The next time you generate
+the blog the comments are collected and rendered automatically. 
+You can also update and render the blog in the backend every some minutes to be more up-to-date.</p>
 
-<p>look at this beauty:</p>
+<p><strong>if you want to make a blog or single page =&gt; you're done! (batteries included ;)</strong></p>
 
-<p><img src="/static/images/Titan_poster_840.png" alt="Alt text" /></p>
+<h4>unique features</h4>
 
-<p><strong>Titan</strong> (auch <em>Saturn VI</em>) ist mit einem Durchmesser von 5150&nbsp;Kilometern der größte [Mond] des Planeten [Saturn], weshalb er nach dem Göttergeschlecht der [Titanen] benannt wurde. Er ist ein [Eismond], nach [Ganymed] der [zweitgrößte Mond] im [Sonnensystem] und der einzige mit einer dichten [Gashülle].</p>
+<ul>
+<li><p><strong>comment posts via twitter</strong> 
+..* so no third party tool or login required for comments.
+..* comments are collected automatically from twitter next time you generate the blog.</p></li>
+<li><p>pre rendered <strong>tag views</strong> on board (click on a tag and you see all posts with that tag) statically rendered.</p></li>
+</ul>
 
-<p>Titan wurde 1655 vom niederländischen Astronomen [Christiaan Huygens] entdeckt.[1] Beobachtungen von der [Erde] und vom [Weltraumteleskop Hubble] aus erweiterten das Wissen über ihn, insbesondere jedoch Vorbeiflüge einiger [Raumsonden] seit 1979. Die informativsten Bilder und Messdaten sind bei der Landung der Sonde [Huygens] im Jahre 2005 erfasst worden.[2]</p>
+<h4>features</h4>
 
-<p>Obwohl die Oberflächentemperatur des Titans weitaus niedriger ist als die der Er</p>
+<ul>
+<li>supports <strong>blogs, pages, posts and single pages</strong></li>
+<li><strong>tagging</strong> on board </li>
+<li><a href="https://github.com/addywaddy/jquery.tagcloud.js/">tag cloud</a> on board (see snapshots below)</li>
+<li><strong>simple pagination</strong> (newer, older) on board</li>
+<li><strong>syntax highlighting</strong> with <a href="https://highlightjs.org/">highlight.js</a> on board</li>
+<li><a href="http://www.chartjs.org/">charts.js</a> on board and usable in the posts / pages directly</li>
+<li><a href="https://d3js.org/">d3.js</a> demo with loading data from csv file on board. </li>
+<li>everthing in posts and pages is <a href="https://daringfireball.net/projects/markdown/">markdown</a></li>
+<li>you can add your own javascript or css in every post or template</li>
+<li><strong>pre_rederers</strong>: call any of your own python functions before rendering</li>
+<li>based on <strong><a href="http://v4-alpha.getbootstrap.com/">bootstrap4</a></strong></li>
+<li>very sophisticated <strong>template engine</strong> based on <a href="http://www.tornadoweb.org/">tornado</a> {{val}}</li>
+<li><a href="http://sapegin.github.io/jquery.mosaicflow/">image gallery</a> on board</li>
+<li>ready to be hosted on <strong>github pages</strong> (as this site is)</li>
+</ul>
 
-<p>[1] </p>
+<h4>the goal is to make you just run in a second if you wish to make</h4>
 
-<p>[2] </p>
+<ul>
+<li>a blog</li>
+<li>a single page or landing page</li>
+<li>specific pages for a topic including charts, articles.</li>
+</ul>
+
+<h4>workflow</h4>
+
+<ol>
+<li><p>(generate your site) </p>
+
+<pre><code>python generate_site.py (or just copy the dirs for now)
+</code></pre></li>
+<li><p>write a post or page (markdown text).
+The example below is this exactr page you can see right now</p>
+
+<p><img src="/static/images/sample_page.png" alt="page example" /></p></li>
+<li><p>generate the blog</p>
+
+<pre><code>python generate_blog.py
+</code></pre></li>
+
+<li><p>run test_server (if happy copy to your server, webhoster or <a href="https://pages.github.com/">github</a></p></li>
+<li>done</li>
+</ol>
+
+<h4>looks like this with the default theme (bs4_blog)</h4>
+
+<p><img src="/static/images/static_blog_post_example.png" alt="static<em>blog</em>post_example" /></p>
 
           
           
             <!-- https://twittercommunity.com/t/tweet-button-vs-intents-dynamically-change-tweet-text/17166 -->
             <div align="right">
             <a class="btn btn-primary-outline btn-sm" 
-              href="https://twitter.com/share?url=''&amp;text=%40pythononwheels%20%23comment%20%23postid%20358467b812d85" 
+              href="https://twitter.com/share?url=''&amp;text=%40pythononwheels%20%23comment%20%23postid%2097953b12568cf" 
               rel="nofollow">comment this post with Twitter</a>
             </div>
               <p class="blog-post-section">Comments</p>
               <hr>
-              
-              <p>
-                <div class="card card-block">
-                  <h4 class="card-title">From: @zweckmeck</h4>
-                  <p class="card-text">neuer test von meck</p>
-                  <a href="http://twitter.com/zweckmeck" class="card-link">@zweckmeck</a>
-                  2016-02-18 20:25:32
-                </div>
-              </p>
-              
-              <p>
-                <div class="card card-block">
-                  <h4 class="card-title">From: @tweetchaz_test</h4>
-                  <p class="card-text">this is a test comment for the code test post. nice if it works. not so nice, if not ;)</p>
-                  <a href="http://twitter.com/tweetchaz_test" class="card-link">@tweetchaz_test</a>
-                  2016-02-17 21:24:37
-                </div>
-              </p>
               
           
       </div>
